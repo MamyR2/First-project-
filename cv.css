@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+}
+
+ul, ol {list-style-type: square;}
+
+.main{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    margin: 10px;
+    
+    
+}
+.formulaire{
+    text-align: center;
+    border: 1px solid black; 
+    padding: 10px;
+    width: 40%;
+    height: 100%;
+    display: block;
+
+    animation: sliderY 4s;
+    transition: all 2s;
+    
+}
+
+
+
+ @keyframes sliderY{
+    from{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes sliderX{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+} 
+
+.exp{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+   
+  
+}
+
+.afficheExp{
+    display: block;
+}
+#compétence{
+   width: 70%;
+   
+}
+
+/* FORMULAIRE 2 */
+
+
+#avatar{
+    border-radius: 50%;
+    width: 150px;
+    float: right;
+    position: relative; 
+    bottom: 10px;
+}
+
+
+.formulaire2{
+    /* border: 1px solid black; */
+    margin: 2%;
+    position: relative;
+    padding: 2%;
+    background: #dddddd;
+    border-radius: 10px;
+    width: 60%;
+    animation: sliderX 4s;
+}
+
+.pers{
+    width: 90%;
+    margin-bottom: 40px;
+}
+
+
+.pers p{
+    font-weight: bold;
+    font-size: 15px;
+    width: 50%;
+    line-height: 30px;
+}
+
+.pers span{
+    font-weight: normal;
+
+    
+}
+.formulaire2 div{
+   padding: 10px;
+   line-height: 25px;
+}
+
+
+
+
+
+.exp2 th ,tr,td{
+    border: solid 1px #dddddd;
+    border-collapse: collapse;
+}
+
+.D{
+    /* border: solid 1px black;  */
+    min-height: 150px;
+    margin: 10px 0;
+
+    
+}
+
+.formulaire2 h1{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background:  black;
+    color: white;
+    position: relative;
+    
+    
+    }
+
+.D ol, ul{
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+
+#formation2{
+        width: 50%;
+        
+    }
+
+#competence2{
+    width: 50%;
+    }
+
+#langue2{
+    width: 50%;
+}
+
+#centre2{
+    width: 50%;
+}
+
+.disp{
+    display: flex;
+    justify-content: space-around;
+    
+}

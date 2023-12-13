@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="CV.js"></script>
+</head>
+<body>
+
+ <header class="header">
+        <nav class="topbar">
+            <span id="logo"> LOGO</span>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="module.html">Module</a></li>
+                <li><a href="liste.html">Liste des étudiants</a></li>
+                <li><a href="cv.html">CV</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+
+    
+  
+
+
+
+  <!-- CONTENU DE LA PAGE -->
+    <div class="main">
+
+        <!------------------- FORMLAIRE 1 ------------------>
+
+        <div class="formulaire" >
+          <h1 class="titre">Curriculum Vitae</h1>
+            Nom: <br>
+            <input type="text" name="nom" value=""> <br>
+            Prénom: <br>
+            <input type="text" name="prenom"><br>
+            Date de naissance : <br>
+            <input type="date" name="date"> <br>
+            mail: <br>
+            <input type="email" name="mail"><br>
+            telephone: <br>
+            <input type="tel"  name="phone"> <br>
+            sexe: <br>
+            <input type="radio" name="gender" value="Masculin" id=""> Masculin <br>
+            <input type="radio" name="gender" value="Féminin" id=""> Féminin <br>
+
+            <!--         Boutons de validation                -->
+            <button class="valider" onclick= "envoyer()">valider</button>
+          
+
+            
+         <!--         LANGUE                -->
+            <div class="langue">
+                <h3>langue</h3>
+                <input type="text" id="langu" placeholder="entrez une langue ">
+                <button onclick="langue()">+</button>
+                <button onclick="DelLangue()">-</button>
+            </div>  
+
+
+            <!--         CENTRE                -->
+            <div class="Centre">
+              <h3>Centre d'interet</h3>
+              <input type="text" id="interet" placeholder="Centre d'interet ">
+              <button onclick="interet()">+</button>
+              <button onclick="Delcentre()">-</button>
+            </div> <br>
+
+             <!--         COMPETENCE                -->
+                <div class="compétence">
+                    <h3>Compétences</h3>
+                      <input type="text" id="compétence" placeholder="merci d'insérer vos compétences">
+                      <button onclick="competence()">+</button>
+                      <button onclick="DelComp()">-</button>
+                </div>
+
+                        <!-------- Experience et Formations  ------------->
+                <div class="bloc">
+                          <!--         EXPERIENCE PROFESSIONNELLE                -->
+
+            
+                    <div class="experience"> 
+                      <h3>Experience professionnelle</h3> 
+                        <table class="exp">
+                          
+                          <tr><th>Année</th> </tr>
+                          <tr><td><span><input type="text" placeholder="0000 - 0000" id="An"></span></td></tr>
+                         
+                          <tr><th>Poste</th> </tr>
+                          <tr><td><span><input type="text" placeholder="Le poste occupé" id="poste"></span></td></tr>
+                            
+                          <tr><th>Entreprise</th></tr>
+                          <tr> <td><span><input type="text" placeholder="Société" id="societe"></span></td></tr>
+                          
+                                                                                                                                                                                                                                                                                                                          
+                        </table>
+                        <span><button class="valider" onclick="pro()">ajouter</button></span>
+                          <span> <button onclick="DelExp()">effacer</button></span>
+                    </div>
+
+            <!--         FORMATION                -->
+
+          
+                    <div class="formation"> 
+                      <h3>Formations </h3>
+                        <table class="exp">
+                          
+                          <tr><th>Periode</th></tr>
+                          <tr><td><span><input type="text" placeholder="juin 2020" id="periode"></span></td></tr> 
+                       
+                          <tr><th>Etablissement</th></tr>
+                          <tr> <td><span><input type="text" placeholder="Nom de l'établisement" id="etab"></span></td></tr>
+                           
+                          <tr><th>Formation</th></tr>
+                          <tr><td><span><input type="text" placeholder="formation" id="formation"></span></td></tr>
+
+                        </table>  
+                         
+                        <span> <button class="valider" onclick="formation()">ajouter</button></span>
+                        <span><button onclick="DelForm()">effacer</button></span>
+                
+                                                                                                                                                                                                                                                                                                                              
+                        
+                       
+                    </div>    
+          
+                </div>
+            
+
+   
+              
+            
+           
+            
+
+        </div>
+        
+        
+            
+    
+                <!--         formulaire 2               -->
+        <div class="formulaire2">
+
+          <div class="pers">
+              <img src="content image/avatar.png" id="avatar" alt="">
+              <p>Nom : <span id="name"></span></p>
+              <p>Prénom: <span id="first"></span></p>
+              <p>date de naissance : <span class="birthday"></span></p>
+              <p>Mail: <span class="mail"></span></p>
+              <p>telephone: <span class="number"></span></p>
+              <p>sexe: <span class="gender"></span></p>
+          </div>
+            
+
+             <!--         EXPERIENCE PROFESSIONNELLE                -->
+
+             <div class="D" id="experience2">
+                    <h1>Experience professionelle </h1>
+
+                    
+                    <ol class="exp2">
+                      
+                    </ol>
+                   
+             </div>
+              
+
+               
+             <div class="disp">
+                <!--      Formation              -->
+                  <div class="D" id="formation2">
+                    <h1>Formation </h1>
+
+                    
+                    <ol class="form2">
+                      
+                    </ol>
+                    
+                  </div>
+      
+
+                    <!--      Compétence              -->
+                    <div class="D" id="competence2">
+                          <h1>Compétences </h1>
+
+                         
+                          <ol class="comp">
+                            
+                          </ol>
+                          
+                    </div>
+             </div>
+                    
+
+           
+            <div class="disp">
+                            <!--      Langues              -->
+
+                  <div class="D" id="langue2">
+                          <h1>Langues </h1>
+
+                          
+                          <ol class="lang">
+
+                          
+                        </ol>
+                       
+                    </div>
+              
+
+                <!--      Centre d'interet              -->
+
+                    <div class="D" id="centre2">
+                            <h1>Centre d'interet </h1>
+
+                            
+                            <ol class="centr">
+                              
+                            
+                            </ol> 
+                           
+                    </div>
+            </div>
+
+             
+               
+              
+
+        </div>
+
+        </div>
+    </div>
+
+    <footer>
+      <div class="navigation">
+          <h3>Navigation</h3>
+          <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="module.html">Module</a></li>
+              <li><a href="liste.html">Liste des étudiants</a></li>
+              <li><a href="cv.html">CV</a></li>
+              <li><a href="">Nous contacter</a></li>
+          </ul>
+      </div>
+      <div class="news">
+              <h3>Newsletter</h3>
+              <p>Entrez votre adresse mail pour souscrire à la boite au lettre</p>
+              <input type="text" name="mail" id="mail" placeholder="adresse mail"> 
+              <button id="subscribe">subscribe</button>
+      </div>
+      <div class="app">
+          <h3>Nos application</h3><br>
+          <img src="images/vimeo.png" alt=""> <br> <br>
+          <h3>Suivez-nous sur</h3><br>
+          <a href="linkedin.com"><img src="images/linkedin.png" alt=""></a>
+          <a href="pinterest.com"><img src="images/pinterest.png" alt=""></a>
+          <a href="instagram.com"><img src="images/Instagram.png" alt=""></a>
+          <a href="youtube.com"><img src="images/youtube.png" alt=""></a>
+          <a href="google.com"><img src="images/g+.png" alt=""></a>
+
+      </div>
+  </footer>
+  
+   
+    
+</body>
+</html>

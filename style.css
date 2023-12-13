@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.topbar{    
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    background: #2e2e3c;
+}
+
+#logo{
+  font-size: 50px;
+  color: white;
+  margin-left: 10%;
+  font-family: Symbol;
+    
+}
+.topbar ul{
+    display: flex;
+    justify-content: space-around;    
+   
+    font-size: 20px;
+    height: 60px;
+    align-items: center;
+    
+}
+
+.topbar a{
+    color: white;
+    transition: color .4s;
+}
+
+.topbar a:hover{
+    color: orangered;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-family: Frank Ruhl Hofshi;
+    background:white;
+    animation: animate 5s;
+    transition: all 5s;
+    font-family: Symbol;
+}
+
+
+/* ********************CONTENT *************************/
+
+@keyframes animate{
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+.content{
+   /* background:cadetblue; */
+   /* background-image: url('content image/web-development-ge8bb16c28_1280.png'); */
+   background-size: cover; 
+    position: relative;
+   background: white;
+   margin: 10px;
+   margin-bottom: 20px;
+   padding: 5px;
+   
+}
+
+
+
+.content:after {
+    content: "";
+    background: #3a4e58;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.1;
+
+}
+
+@keyframes rotation{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+.picture{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border-radius:50px;
+   transition: all 5s;
+   z-index: 1;
+   
+}
+
+.picture:hover{
+    animation: rotation 5s;
+    animation-iteration-count: infinite;
+}
+
+.division{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    min-height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px 10px ;
+    padding: 20px;
+    position: relative;
+
+    
+}
+
+#grid2{
+    grid-template-columns: 60% 40%;
+
+
+}
+.subdvision{
+    align-items: center;
+    display: flex;
+    /* background: #373844; */
+    
+}
+
+.description{
+   text-align: center;
+   font-weight: bold;
+   border-radius: 10px;
+   border: solid white 1px;
+   padding: 10px;
+   transition: 1s;
+ animation: affichage 6s;
+ 
+    
+}
+
+/* .description:hover{
+    border: orangered 1px solid;
+    cursor: pointer;
+    background: white;
+
+} */
+
+@keyframes affichage{
+    from {opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+/************************** FOOTER *****************************/
+footer{
+    display: flex;
+    width: 100%;
+    /* background: #373844; */
+    background: #2e2e3c;
+    padding-top: 20px;
+}
+
+.navigation{
+    width: 33%;
+    text-align: center;
+}
+
+.navigation h3{
+    color: #ffffff;
+}
+.navigation ul{
+    padding: 0;
+    line-height: 30px;
+    
+}
+.navigation li{
+    font-size:  20px;
+    
+    }
+
+.navigation a{
+    color: #adb2b7;
+    transition:  color .4s; 
+}
+
+.navigation a:hover{
+    color: orangered; 
+}
+.news{
+    width: 33%;
+}
+
+.news h3{
+    
+  color: #ffff;
+}
+
+.news p{
+    color: #adb2b7;
+    margin-top: 25px;
+}
+
+#mail{
+    margin: 25px 0;
+    margin-left: 3px;
+    padding: 10px;
+    border-radius: 5px;
+    border: beige solid 3px;
+}
+
+#subscribe{
+    padding: 10px;
+    border-radius: 20px;
+    border: orangered solid 2px;
+    background: orangered;
+    font-size: 15px;
+    width: 100px;
+    transition: .4s;
+}
+
+#subscribe:hover{
+    font-weight: bold;
+    cursor: pointer ;    
+ 
+}
+
+
+.app{
+    padding-left: 10px;
+    /* background: #373844; */
+    background: #2e2e3c;
+    width: 34%;
+    justify-content: space-around;
+}
+
+.app h3{
+    color: #ffff;
+}
+
+.app img{
+    width: 50px;
+    margin-right: 5px;
+}
+
+

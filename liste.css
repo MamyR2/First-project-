@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    
+    padding: 10px;
+   
+
+}
+table{
+    width: 100%;
+    min-height: 300px;
+
+}
+table,th, td{
+    border: solid 1px #dddddd;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+    font-family: Calibri Light;
+    
+} 
+
+#TabTitre{
+    text-align: center;
+}
